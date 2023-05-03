@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
+    const posto1 = prompt(`Insira o preço do combustível no Posto 1`);
+    const posto2 = prompt(`Insira o preço do combustível no Posto 2`);
+    const posto3 = prompt(`Insira o preço do combustível no Posto 3`);
 
     //PROCESSAMENTO
-
+    const postos = Number(posto1) + Number(posto2) + Number(posto3);
+    const media = Number(postos) / 3;
 
     //SAÍDA
-
+    document.write(`A média do preço do combustível é de R$${media.toFixed(2).replace(",", ".")}`); 
 </script>

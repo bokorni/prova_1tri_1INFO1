@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
+    const atv1 = prompt (`Insira a sua nota para a atividade 1`);
+    const atv2 = prompt (`Insira a sua nota para a atividade 2`);
+    const atv3 = prompt (`Insira a sua nota para a atividade 3`);
 
 
     //PROCESSAMENTO
-
+    const notafinal = Number(atv1) + Number(atv2) + Number(atv3);
+    const media = Number(notafinal) /3
 
     //SAÍDA
-
+   document.write(`A média foi de ${media}pontos`);
 </script>

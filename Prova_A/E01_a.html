@@ -7,11 +7,16 @@
     */
 
     //ENTRADA
+    const gramaracao = prompt(`Insira quantos gramas de ração o cachorro come diariamente`);
 
 
     //PROCESSAMENTO
-
+    const racaofds = Number(gramaracao) * 0.15;
+    const fds = Number(gramaracao) + (racaofds);
+    const semana = Number(gramaracao) * 5;
+    const fimdesemana = Number(fds) * 2;
+    const peso = Number(fimdesemana) + (semana);
 
     //SAÍDA
-
+    document.write(`O cachorro come ${peso} gramas de ração semanalmente`);
 </script>

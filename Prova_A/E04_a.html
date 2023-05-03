@@ -8,11 +8,14 @@
     */
 
     //ENTRADA
-
+    const dist = prompt(`Informe a distância da viagem`);
+    
 
     //PROCESSAMENTO
-
+    const litros = Number (dist) / 14 * 5.19
+    const pedagio = 50 * 4.90
+    const preco = Number(pedagio) + (litros);
 
     //SAÍDA
-
+    document.write(`O preço da viagem será de ${preco.toFixed(2).replace(",",".")}`)
 </script>
